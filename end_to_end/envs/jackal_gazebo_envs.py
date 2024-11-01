@@ -227,6 +227,9 @@ class JackalGazeboLaser(JackalGazebo):
         flage = False
         # observation is the 720 dim laser scan + one local goal in angle
         laser_scan = self._get_laser_scan() 
+        # ------------------------ test test test ------------------------  #
+        laser_scan = np.full((720, 1), 1) 
+        # ------------------------ test test test ------------------------  #
         discretized_ranges = []
         for i, item in enumerate(laser_scan):
              if laser_scan[i] == float ('Inf'):
@@ -292,6 +295,9 @@ class JackalGazeboLaser(JackalGazebo):
         rela_angle = np.arctan2(goal_pos[0],goal_pos[1])                
         rela_dis = np.sqrt(goal_pos[0]**2+goal_pos[1]**2)  
         target_pose = [rela_dis*robot_range/scale,rela_angle]
+        # ------------------------ test test test ------------------------  #
+        target_pose = [1,1] 
+        # ------------------------ test test test ------------------------  #
         action[0] =action[0]*robot_range/scale
         state = np.concatenate([pool_state,target_pose,action], axis=0)
         obs =state
