@@ -1,0 +1,9 @@
+.vscode/
+__pycache__/
+end_to_end/scripts/network1/
+end_to_end/scripts/network2/
+end_to_end/scripts/network3/
+end_to_end/scripts/network4/
+end_to_end/scripts/networksnew/
+end_to_end/scripts/network/
+jackal_helper/worlds/
