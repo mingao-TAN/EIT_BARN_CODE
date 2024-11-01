@@ -142,3 +142,5 @@ if __name__ == "__main__":
     os.system('pkill -9 pt_main_thread')
     gazebo_process.terminate()
     gazebo_process.wait()
+    
+    
