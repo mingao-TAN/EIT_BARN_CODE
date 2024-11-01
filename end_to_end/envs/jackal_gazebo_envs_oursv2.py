@@ -273,7 +273,6 @@ class JackalGazeboLaser(JackalGazebo):
         b =  goal_pos[1]
         goal_pos[0] = b
         goal_pos[1] = a
-        
         # ------------------------ change by mingao： the goal point ------------------------  #
         # ------------------------ change by mingao： waypoint ------------------------  #
         # global xxxxxxx
